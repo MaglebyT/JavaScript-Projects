@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <style>
+            @font-face {
+                font-family: cursedTimer;
+                src: url("./CursedTimerUlil-Aznm.ttf");
+            } </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="columnHome">
+                <h1>HOME</h1>
+                <h2 class="score" id="home-score">0</h2>
+                <div>
+                    <button id="home-score-btn-1" onclick="increaseHomeScoreOne()">+1</button>
+                    <button id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+2</button>
+                    <button id="home-score-btn-3" onclick="increaseHomeScoreThree()">+3</button>
+                </div>
+                <button class="reset-btn" id="reset-button" onclick="resetScores()">Reset</button>
+            </div>
+            
+            <div class="columnGuest">
+                <h1>GUEST</h1>
+                <h2 class="score" id="guest-score">0</h2>
+                <div>
+                    <button id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+1</button>
+                    <button id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+2</button>
+                    <button id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+3</button>
+                </div>
+                <button class="cheat-btn" id="cheat-button" onclick="cheatScores()">Cheat</button>
+                
+            </div>
+            
+        </div>
+        
+            
+        <script src="index.js"></script>
+    </body>
+</html>
